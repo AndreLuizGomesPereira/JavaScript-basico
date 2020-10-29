@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 24pt Times;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = prompt("Qual o seu nome?")
+        document.write(
+            `Olá ${nome}. Seu nome tem ${nome.length} letras </br>`) // Tecnica apresentada com template string
+        document.write(
+                `Olá ${nome}. Seu nome ${nome.toUpperCase()} em letras maiúsculas. </br>`
+                ) // Formatacao com letras maiusculas
+        document.write(
+            `Olá ${nome}. Seu nome ${nome.toLowerCase()} em letras minusculas.`) // Formatacao com letras maiusculas
+        var idade = Number(prompt("Qual sua idade?"))
+        document.write(`Nossa você só tem ${idade} anos? </br>`)
+        var altura = Number(prompt(`Qual sua altura? </br>`))
+        document.write(
+            `Então você mede ${altura.toFixed(2).replace('.', ',')}`
+            ) // Metodo para delimitar apenas duas casas decimais e trocar ponto por virgula na visualizacao
+
+        //informacao monetaria : n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+
+</html>

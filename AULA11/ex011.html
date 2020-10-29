@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Conferir Nacionalidade</h1>
+    <h3>Digite aqui seu país natal</h3>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="O que você é?" onclick="conferir()">
+    <div id="res"></div>
+
+    <Script>
+        function conferir() {
+            var country = document.getElementById('pais').value
+            var res = document.querySelector('div#res')
+            // var converterPais = country.value
+
+            res.innerHTML = `<p>Seu país é <strong>${country}!</strong></p>`
+            if (country == 'Brasil') {
+                res.innerHTML += `<h1>Então você é <strong>Brasileiro!</strong><h1>`
+            } else {
+                res.innerHTML += `<h2>Então você é gringo</h2>`
+            }
+
+           
+        }
+    </Script>
+</body>
+
+</html>

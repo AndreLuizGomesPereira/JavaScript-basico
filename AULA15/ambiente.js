@@ -10,4 +10,4 @@ for (let i in num) { // Modo de simplificar o metodo for
     console.log(`${num[1]} é um ${num[0]} de ${num[2]}, ${num[3]} e que tem ${num[4]} filhos(s)`)
 }
 
-console.log(num.indexOf('Casado'))
+console.log(num.indexOf('Homem'))
